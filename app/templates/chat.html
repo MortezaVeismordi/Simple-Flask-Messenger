@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Chat{% endblock %}
+
+{% block content %}
+<div class="chat-section">
+    <h2>Chat Room</h2>
+    <!-- بخش نمایش پیام‌ها -->
+    <div id="chat-messages" class="chat-box">
+        <!-- پیام‌ها به صورت داینامیک اضافه خواهند شد -->
+    </div>
+    
+    <!-- فرم ارسال پیام -->
+    <form id="send-message-form">
+        <div class="form-group">
+            <input type="text" id="message-content" name="message" placeholder="Type your message..." required>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+    </form>
+    
+    <!-- بخش فایل‌ها -->
+    <h3>Uploaded Files</h3>
+    <ul id="uploaded-files">
+        <!-- لیست فایل‌های آپلود شده به صورت داینامیک اضافه خواهد شد -->
+    </ul>
+    
+    <!-- فرم آپلود فایل -->
+    <form id="upload-file-form" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="file-input">Choose a file:</label>
+            <input type="file" id="file-input" name="file" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

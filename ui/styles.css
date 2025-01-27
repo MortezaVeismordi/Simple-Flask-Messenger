@@ -1,0 +1,78 @@
+/* General Styles */
+QWidget {
+    background-color: #f7f7f7; /* پس‌زمینه کلی */
+    font-family: "Iran Sans", sans-serif; /* فونت فارسی */
+    font-size: 14px;
+    color: #333;
+}
+
+/* Title Label */
+QLabel#titleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* رنگ سبز برای عنوان */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Logo */
+QLabel#logo {
+    margin-bottom: 20px;
+    border-radius: 75px; /* گرد کردن لوگو */
+    background-color: #fff; /* پس‌زمینه سفید */
+    padding: 10px; /* فاصله اطراف لوگو */
+    border: 2px solid #ccc; /* حاشیه لوگو */
+}
+
+/* Input Fields */
+QLineEdit {
+    background-color: #ffffff; /* پس‌زمینه سفید */
+    border: 1px solid #ccc; /* حاشیه خاکستری */
+    border-radius: 10px; /* گوشه‌های گرد */
+    padding: 10px; /* فاصله داخلی */
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px; /* فاصله بین فیلدها */
+}
+
+QLineEdit:focus {
+    border-color: #4CAF50; /* رنگ سبز هنگام فوکوس */
+    background-color: #f9f9f9; /* تغییر رنگ پس‌زمینه */
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2196F3; /* رنگ آبی اصلی */
+    color: white; /* رنگ متن */
+    border: none; /* حذف حاشیه پیش‌فرض */
+    border-radius: 10px; /* گوشه‌های گرد */
+    padding: 12px 20px; /* اندازه دکمه */
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px; /* فاصله بین دکمه‌ها */
+}
+
+QPushButton:hover {
+    background-color: #1976D2; /* رنگ آبی تیره‌تر هنگام هاور */
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1; /* رنگ آبی تیره هنگام کلیک */
+}
+
+QPushButton#registerButton {
+    background-color: #4CAF50; /* رنگ سبز برای دکمه ثبت‌نام */
+}
+
+QPushButton#registerButton:hover {
+    background-color: #388E3C; /* رنگ سبز تیره‌تر هنگام هاور */
+}
+
+QPushButton#registerButton:pressed {
+    background-color: #1B5E20; /* رنگ سبز تیره‌تر هنگام کلیک */
+}
+
+/* Spacer */
+QSpacerItem {
+    margin-bottom: 20px; /* فاصله اضافی بین عناصر */
+}
