@@ -78,25 +78,36 @@
 ## ساختار پروژه
 
 ```
-project/
-├── app/
-│   ├── __init__.py
-│   ├── auth.py
-│   ├── routes.py
-│   ├── models.py
-│   ├── templates/
-│   │   ├── index.html
-│   │   ├── login.html
-│   │   ├── register.html
-│   │   └── chat.html
-│   ├── static/
+pro1/
+├── app/                             # پوشه اصلی اپلیکیشن Flask
+|   ├── uploads/                     # پوشه برای ذخیره فایل‌ها
+│   ├── __init__.py                  # مقداردهی اولیه Flask، SocketIO، و بلوپرینت‌ها
+│   ├── auth.py                      # مدیریت احراز هویت کاربران
+│   ├── routes.py                    # مسیرهای عمومی
+│   ├── models.py                    # مدل‌های پایگاه داده (کاربران و پیام‌ها)
+|   ├── utils.py                     # ایجاد Decorator برای محافظت از مسیرها
+│   ├── templates/                   # فایل‌های HTML برای صفحات وب
+│   │   ├── base.html                # قالب پایه
+│   │   ├── index.html               # صفحه اصلی
+│   │   ├── login.html               # صفحه ورود
+│   │   ├── register.html            # صفحه ثبت‌نام
+│   │   ├── chat.html                # صفحه چت
+│   │   └── upload.html              # صفحه آپلود فایل
+│   ├── static/                      # فایل‌های استاتیک
 │   │   ├── css/
-│   │   │   └── styles.css
-│   │   └── images/
-├── main.py
-├── requirements.txt
-├── site.db
-└── README.md
+│   │   │   └── styles.css           # استایل‌های CSS
+│   │   ├── js/
+│   │   │   └── main.js              # اسکریپت‌های JavaScript
+│   │   └── images/                  # تصاویر
+│   ├── uploads/                     # محل ذخیره‌سازی تصاویر
+├── ui/                              # پوشه رابط کاربری دسکتاپ
+│   ├── main.py                      # فایل اصلی PyQt
+|   ├── styles.css
+│   └── resources/                   # منابع PyQt (آیکون‌ها، استایل‌ها)
+├── requirements.txt                 # لیست وابستگی‌های پروژه
+└── README.md                        # توضیحات پروژه
+└── test_app.py                      # برای تست کردن پروژه و سرور
+└── test_gui.py                      # برای تست کردن gui
 ```
 
 ## مشارکت
